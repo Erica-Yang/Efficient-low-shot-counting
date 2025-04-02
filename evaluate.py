@@ -9,7 +9,7 @@ import torch
 from torch.utils.data import DataLoader, DistributedSampler
 from torch.nn.parallel import DistributedDataParallel
 from torch import distributed as dist
-
+ 
 
 @torch.no_grad()
 def evaluate(args):
