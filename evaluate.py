@@ -92,9 +92,4 @@ def evaluate(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('LOCA', parents=[get_argparser()])
     args = parser.parse_args()
-    # 自己测试
-    args.swav_backbone = True
-    args.pre_norm = True
-    os.environ['MASTER_ADDR'] = 'localhost'
-    os.environ['MASTER_PORT'] = '5678'
     evaluate(args)
